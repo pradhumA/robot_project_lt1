@@ -19,3 +19,4 @@ TC1
     Input Text    id=getInTouchEmpCount    40
     Click Element    xpath=//button[@class='btn-primary mt-10 w-full']
     Element Text Should Be    xpath=//div[contains(@class,'text-red-600')]    Mobile Number should be 10 digits
+    #Element Text Should Be    //div[contains(text(),'digits')]    Mobile Number should be 10 digits
