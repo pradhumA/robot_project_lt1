@@ -1,5 +1,6 @@
 *** Settings ***
 Library     SeleniumLibrary
+Library    Collections
 
 *** Variables ***
 ${MY_NAME}  Balaji Dinakaran
@@ -19,3 +20,17 @@ TC2
 TC3
     @{fruits}   Create List     apple   grapes  orage
     Log To Console    ${fruits}[1]
+    Append To List      ${fruits}   pineapple
+    Log To Console    ${fruits}
+    Remove From List    ${fruits}    0
+    Log To Console    ${fruits}
+    Insert Into List    ${fruits}      0    mango
+    Log To Console    ${fruits}
+
+TC5
+    @{fruits}   Create List     apple   grapes  orage   mango
+    FOR    ${fruit}    IN    @{fruits}
+        Log    ${fruit}
+
+    END
+
