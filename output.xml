@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220507 16:56:26.768" rpa="false" schemaversion="3">
-<suite id="s1" name="Demo2" source="C:\Users\Dell\Downloads\Internship\automation\robot_Project\appium_suite\demo2.robot">
-<test id="s1-t1" name="TC1" line="5">
+<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220509 14:28:35.519" rpa="false" schemaversion="3">
+<suite id="s1" name="Demo3" source="C:\Users\Dell\Downloads\Internship\automation\robot_Project\appium_suite\demo3.robot">
+<test id="s1-t1" name="TC1" line="6">
 <kw name="Open Application" library="AppiumLibrary">
 <arg>remote_url=http://hub-cloud.browserstack.com/wd/hub</arg>
 <arg>browserstack.user=pradhumkumarmand_rtZNXx</arg>
 <arg>browserstack.key=pDNzBDTWVrgjEAbK4yQS</arg>
-<arg>app=bs://fb8765d2458165e074d21c0c581ddf0bdfd15dbf</arg>
+<arg>app=bs://31465451184ff17bf7b38f207e2fefd77756e2a1</arg>
 <arg>device=Google Pixel 3</arg>
 <arg>os_version=9.0</arg>
 <arg>project=lt6_project</arg>
@@ -18,57 +18,77 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 | *Option*            | *Man.* | *Description*     |
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |</doc>
-<status status="PASS" starttime="20220507 16:56:27.034" endtime="20220507 16:56:57.043"/>
+<status status="PASS" starttime="20220509 14:28:35.722" endtime="20220509 14:29:02.431"/>
 </kw>
 <kw name="Get Source" library="AppiumLibrary">
 <var>${app_source}</var>
 <doc>Returns the entire source of the current page.</doc>
-<msg timestamp="20220507 16:56:58.152" level="INFO">${app_source} = &lt;?xml version='1.0' encoding='UTF-8' standalone='yes' ?&gt;
+<msg timestamp="20220509 14:29:02.650" level="INFO">${app_source} = &lt;?xml version='1.0' encoding='UTF-8' standalone='yes' ?&gt;
 &lt;hierarchy index="0" class="hierarchy" rotation="0" width="1080" height="2028"&gt;
-  &lt;android.widget.FrameLayout index="0" package="com.google.a...</msg>
-<status status="PASS" starttime="20220507 16:56:57.043" endtime="20220507 16:56:58.152"/>
+  &lt;android.widget.FrameLayout index="0" package="org.khanacad...</msg>
+<status status="PASS" starttime="20220509 14:29:02.431" endtime="20220509 14:29:02.650"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${app_source}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220507 16:56:58.152" level="INFO">&lt;?xml version='1.0' encoding='UTF-8' standalone='yes' ?&gt;
+<msg timestamp="20220509 14:29:02.650" level="INFO">&lt;?xml version='1.0' encoding='UTF-8' standalone='yes' ?&gt;
 &lt;hierarchy index="0" class="hierarchy" rotation="0" width="1080" height="2028"&gt;
-  &lt;android.widget.FrameLayout index="0" package="com.google.android.packageinstaller" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[100,66][980,2027]" displayed="true"&gt;
-    &lt;android.widget.FrameLayout index="0" package="com.google.android.packageinstaller" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[100,66][980,2027]" displayed="true"&gt;
-      &lt;android.widget.FrameLayout index="0" package="com.google.android.packageinstaller" class="android.widget.FrameLayout" text="" resource-id="android:id/content" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[100,66][980,2027]" displayed="true"&gt;
-        &lt;android.view.ViewGroup index="0" package="com.google.android.packageinstaller" class="android.view.ViewGroup" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[100,66][980,2027]" displayed="true"&gt;
-          &lt;android.widget.ScrollView index="0" package="com.google.android.packageinstaller" class="android.widget.ScrollView" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[144,844][936,1250]" displayed="true"&gt;
-            &lt;android.widget.LinearLayout index="0" package="com.google.android.packageinstaller" class="android.widget.LinearLayout" text="" resource-id="com.android.packageinstaller:id/dialog_container" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[144,844][936,1250]" displayed="true"&gt;
-              &lt;android.widget.FrameLayout index="0" package="com.google.android.packageinstaller" class="android.widget.FrameLayout" text="" resource-id="com.android.packageinstaller:id/desc_container" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[144,844][936,1096]" displayed="true"&gt;
-                &lt;android.widget.LinearLayout index="0" package="com.google.android.packageinstaller" class="android.widget.LinearLayout" text="" resource-id="com.android.packageinstaller:id/perm_desc_root" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[199,894][892,1096]" displayed="true"&gt;
-                  &lt;android.widget.ImageView index="0" package="com.google.android.packageinstaller" class="android.widget.ImageView" text="" resource-id="com.android.packageinstaller:id/permission_icon" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[199,894][298,993]" displayed="true" /&gt;
-                  &lt;android.widget.TextView index="1" package="com.google.android.packageinstaller" class="android.widget.TextView" text="Allow Zomato to access this device's location?" resource-id="com.android.packageinstaller:id/permission_message" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[298,894][892,1096]" displayed="true" /&gt;
-                &lt;/android.widget.LinearLayout&gt;
+  &lt;android.widget.FrameLayout index="0" package="org.khanacademy.android" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2028]" displayed="true"&gt;
+    &lt;android.widget.LinearLayout index="0" package="org.khanacademy.android" class="android.widget.LinearLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2028]" displayed="true"&gt;
+      &lt;android.widget.FrameLayout index="0" package="org.khanacademy.android" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,66][1080,2028]" displayed="true"&gt;
+        &lt;android.widget.FrameLayout index="0" package="org.khanacademy.android" class="android.widget.FrameLayout" text="" resource-id="org.khanacademy.android:id/action_bar_root" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,66][1080,2028]" displayed="true"&gt;
+          &lt;android.widget.FrameLayout index="0" package="org.khanacademy.android" class="android.widget.FrameLayout" text="" resource-id="android:id/content" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,66][1080,2028]" displayed="true"&gt;
+            &lt;android.widget.LinearLayout index="0" package="org.khanacademy.android" class="android.widget.LinearLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,66][1080,2028]" displayed="true"&gt;
+              &lt;android.widget.FrameLayout index="0" package="org.khanacademy.android" class="android.widget.FrameLayout" text="" resource-id="org.khanacademy.android:id/content" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,66][1080,1896]" displayed="true"&gt;
+                &lt;android.widget.FrameLayout index="0" package="org.khanacademy.android" class="android.widget.FrameLayout" text="" resource-id="org.khanacademy.android:id/content_root" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,66][1080,1896]" displayed="true"&gt;
+                  &lt;android.widget.FrameLayout index="0" package="org.khanacademy.android" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,66][1080,1896]" displayed="true" /&gt;
+                &lt;/android.widget.FrameLayout&gt;
               &lt;/android.widget.FrameLayout&gt;
-              &lt;android.widget.LinearLayout index="1" package="com.google.android.packageinstaller" class="android.widget.LinearLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[144,1096][936,1250]" displayed="true"&gt;
-                &lt;android.widget.LinearLayout index="0" package="com.google.android.packageinstaller" class="android.widget.LinearLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[199,1096][892,1250]" displayed="true"&gt;
-                  &lt;android.widget.LinearLayout index="0" package="com.google.android.packageinstaller" class="android.widget.LinearLayout" text="" resource-id="com.android.packageinstaller:id/button_group" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[216,1107][892,1239]" displayed="true"&gt;
-                    &lt;android.widget.Button index="0" package="com.google.android.packageinstaller" class="android.widget.Button" text="Deny" resource-id="com.android.packageinstaller:id/permission_deny_button" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[540,1107][716,1239]" displayed="true" /&gt;
-                    &lt;android.widget.Button index="1" package="com.google.android.packageinstaller" class="android.widget.Button" text="Allow" resource-id="com.android.packageinstaller:id/permission_allow_button" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[716,1107][892,1239]" displayed="true" /&gt;
-                  &lt;/android.widget.LinearLayout&gt;
-                &lt;/android.widget.LinearLayout&gt;
+              &lt;android.widget.LinearLayout index="1" package="org.khanacademy.android" class="android.widget.LinearLayout" text="" resource-id="org.khanacademy.android:id/tabs" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,1896][1080,2028]" displayed="true"&gt;
+                &lt;android.widget.Button index="0" package="org.khanacademy.android" class="android.widget.Button" text="Home" content-desc="Explore tab" resource-id="org.khanacademy.android:id/tab_bar_button_home" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="true" bounds="[0,1907][360,2022]" displayed="true" /&gt;
+                &lt;android.widget.Button index="1" package="org.khanacademy.android" class="android.widget.Button" text="Search" content-desc="Search tab" resource-id="org.khanacademy.android:id/tab_bar_button_search" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[360,1907][720,2022]" displayed="true" /&gt;
+                &lt;android.widget.Button index="2" package="org.khanacademy.android" class="android.widget.Button" text="Bookmarks" content-desc="Bookmarks tab" resource-id="org.khanacademy.android:id/tab_bar_button_bookmarks" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[720,1907][1080,2022]" displayed="true" /&gt;
               &lt;/android.widget.LinearLayout&gt;
             &lt;/android.widget.LinearLayout&gt;
-          &lt;/android.widget.ScrollView&gt;
-        &lt;/android.view.ViewGroup&gt;
+          &lt;/android.widget.FrameLayout&gt;
+        &lt;/android.widget.FrameLayout&gt;
       &lt;/android.widget.FrameLayout&gt;
-    &lt;/android.widget.FrameLayout&gt;
+    &lt;/android.widget.LinearLayout&gt;
   &lt;/android.widget.FrameLayout&gt;
 &lt;/hierarchy&gt;</msg>
-<status status="PASS" starttime="20220507 16:56:58.152" endtime="20220507 16:56:58.152"/>
+<status status="PASS" starttime="20220509 14:29:02.650" endtime="20220509 14:29:02.650"/>
 </kw>
-<kw name="Close Application" library="AppiumLibrary">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>xpath=//*[@text='Dismiss']</arg>
+<arg>30s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20220509 14:29:02.650" endtime="20220509 14:29:06.791"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//*[@text='Dismiss']</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220509 14:29:06.791" level="INFO">Clicking element 'xpath=//*[@text='Dismiss']'.</msg>
+<status status="PASS" starttime="20220509 14:29:06.791" endtime="20220509 14:29:07.104"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>xpath=//*[@content-desc='Settings']</arg>
+<arg>30s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20220509 14:29:07.104" endtime="20220509 14:29:07.853"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//*[@content-desc='Settings']</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220509 14:29:07.853" level="INFO">Clicking element 'xpath=//*[@content-desc='Settings']'.</msg>
+<status status="PASS" starttime="20220509 14:29:07.853" endtime="20220509 14:29:08.697"/>
+</kw>
+<kw name="Close Application" library="AppiumLibrary" type="TEARDOWN">
 <doc>Closes the current application and also close webdriver session.</doc>
-<status status="PASS" starttime="20220507 16:56:58.152" endtime="20220507 16:56:59.589"/>
+<status status="PASS" starttime="20220509 14:29:08.697" endtime="20220509 14:29:10.934"/>
 </kw>
-<status status="PASS" starttime="20220507 16:56:27.034" endtime="20220507 16:56:59.589"/>
+<status status="PASS" starttime="20220509 14:28:35.722" endtime="20220509 14:29:10.934"/>
 </test>
-<status status="PASS" starttime="20220507 16:56:26.768" endtime="20220507 16:56:59.604"/>
+<status status="PASS" starttime="20220509 14:28:35.519" endtime="20220509 14:29:10.934"/>
 </suite>
 <statistics>
 <total>
@@ -77,7 +97,7 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Demo2">Demo2</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Demo3">Demo3</stat>
 </suite>
 </statistics>
 <errors>

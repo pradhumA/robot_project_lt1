@@ -16,4 +16,23 @@ TC1
     ${app_source}       Get Source
     Log   ${app_source}
 
+    #Set Appium Timeout     30s
+    
+    Wait Until Page Contains Element    xpath=//*[@text='Dismiss']  30s
+    Click Element    xpath=//*[@text='Dismiss'] 
+    
+    Wait Until Page Contains Element    xpath=//*[@text='Sign in']      30s
+    Click Element    xpath=//*[@text='Sign in']
+
+    Wait Until Page Contains Element    xpath=//*[@text='Sign in']      30s
+    Click Element    xpath=//*[@text='Sign in']
+
+    Wait Until Page Contains Element    xpath=//*[@text='Enter an e-mail address or username']      50s
+    Input Text    xpath=//*[(@text='Enter an e-mail address or username')]    hello@gmail.com
+    Input Password    xpath=//*[@text='Password']    welcome
+    Click Element    xpath=(//*[@text='Sign in'])[2]
+
+    Element Text Should Be    xpath=//*[contains(@text='issue')]    There was an issue signing in
+
+
     Close Application
